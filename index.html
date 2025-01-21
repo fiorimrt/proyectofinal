@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Recomendación de Coches</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-5">Simulador de Recomendación de Coches</h1>
+        <form id="formSimulador" class="mt-4">
+            <div class="form-group">
+                <label for="presupuesto">Presupuesto</label>
+                <input type="number" class="form-control" id="presupuesto" placeholder="Ingrese su presupuesto">
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="number" class="form-control" id="edad" placeholder="Ingrese su edad">
+            </div>
+            <div class="form-group">
+                <label for="usoCoche">Uso del Coche</label>
+                <select class="form-control" id="usoCoche">
+                    <option value="">Seleccione el uso</option>
+                    <option value="ruta">Ruta</option>
+                    <option value="ciudad">Ciudad</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="autoFamiliar">¿Auto Familiar?</label>
+                <select class="form-control" id="autoFamiliar">
+                    <option value="">Seleccione una opción</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="transmision">Transmisión</label>
+                <select class="form-control" id="transmision">
+                    <option value="">Seleccione una transmisión</option>
+                    <option value="automatica">Automática</option>
+                    <option value="manual">Manual</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="traccion">Tracción</label>
+                <select class="form-control" id="traccion">
+                    <option value="">Seleccione una opción</option>
+                    <option value="4x4">4x4</option>
+                    <option value="4x2">4x2</option>
+                </select>
+            </div>
+            <button type="button" id="btnRecomendar" class="btn btn-primary">Recomendar</button>
+        </form>
+        <div id="resultadosRecomendacion" class="mt-5"></div>
+    </div>
+
+    <script src="simulador.js"></script>
+</body>
+
+</html>
