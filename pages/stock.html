@@ -7,9 +7,30 @@
     <title>Base de Datos y Stock de Coches</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="../simulador.js" defer></script>
 </head>
 
-<body>
+<body data-page="pagina2">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Recomendame un coche</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Otra Página</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <h1 class="mt-5">Base de Datos y Stock de Coches</h1>
         <div class="form-group mt-4">
@@ -18,8 +39,6 @@
         </div>
         <div id="listaCoches" class="mt-4"></div>
     </div>
-
-    <script src="../stock.js"></script>
 </body>
 
 </html>
