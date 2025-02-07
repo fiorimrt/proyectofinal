@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Recomendación de Coches</title>
+    <title>Simulador de recomendación de coches</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="simulador.js" defer></script>
@@ -25,58 +25,58 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./pages/stock.html">Stock</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
+
             </ul>
         </div>
     </nav>
     <div class="container">
-        <h1 class="mt-5">Simulador de Recomendación de Coches</h1>
+        <h1 class="mt-5">Simulador de recomendación de coches</h1>
         <form id="formSimulador" class="mt-4">
             <div class="form-group">
-                <label for="presupuesto">Presupuesto</label>
-                <input type="number" class="form-control" id="presupuesto" placeholder="Ingrese su presupuesto">
+                <label for="marca">Marca</label>
+                <input type="text" class="form-control" id="marca" placeholder="Ingrese la marca del auto">
             </div>
             <div class="form-group">
-                <label for="edad">Edad</label>
-                <input type="number" class="form-control" id="edad" placeholder="Ingrese su edad">
-            </div>
-            <div class="form-group">
-                <label for="usoCoche">Uso del Coche</label>
-                <select class="form-control" id="usoCoche">
-                    <option value="">Seleccione el uso</option>
-                    <option value="ruta">Ruta</option>
-                    <option value="ciudad">Ciudad</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="autoFamiliar">¿Auto Familiar?</label>
-                <select class="form-control" id="autoFamiliar">
-                    <option value="">Seleccione una opción</option>
-                    <option value="si">Sí</option>
-                    <option value="no">No</option>
+                <label for="combustible">Tipo de Combustible</label>
+                <select class="form-control" id="combustible">
+                    <option value="">Seleccione el tipo de combustible</option>
+                    <option value="gas">Gasolina</option>
+                    <option value="diesel">Diésel</option>
+                    <option value="electric">Eléctrico</option>
+                    <option value="hybrid">Híbrido</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="transmision">Transmisión</label>
                 <select class="form-control" id="transmision">
                     <option value="">Seleccione una transmisión</option>
-                    <option value="automatica">Automática</option>
-                    <option value="manual">Manual</option>
+                    <option value="a">Automática</option>
+                    <option value="m">Manual</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="traccion">Tracción</label>
+                <label for="anio">Año del Vehículo</label>
+                <input type="number" class="form-control" id="anio" placeholder="Ingrese el año">
+            </div>
+            <div class="form-group">
+                <label for="cilindros">Número de Cilindros</label>
+                <input type="number" class="form-control" id="cilindros" placeholder="Ingrese los cilindros">
+            </div>
+            <div class="form-group">
+                <label for="traccion">Tipo de Tracción</label>
                 <select class="form-control" id="traccion">
                     <option value="">Seleccione una opción</option>
-                    <option value="4x4">4x4</option>
-                    <option value="4x2">4x2</option>
+                    <option value="fwd">FWD (Tracción Delantera)</option>
+                    <option value="rwd">RWD (Tracción Trasera)</option>
+                    <option value="awd">AWD (Tracción en Todas las Ruedas)</option>
+                    <option value="4wd">4WD (Tracción en las Cuatro Ruedas)</option>
                 </select>
             </div>
             <button type="button" id="btnRecomendar" class="btn btn-primary">Recomendar</button>
         </form>
         <div id="resultadosRecomendacion" class="mt-5"></div>
+
+
     </div>
 </body>
 

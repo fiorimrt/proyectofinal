@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base de Datos y Stock de Coches</title>
+    <title>Base de datos y stock de coches</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="../simulador.js" defer></script>
@@ -12,7 +12,7 @@
 
 <body data-page="pagina2">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Recomendame un coche</a>
+        <a class="navbar-brand" href="../index.html">Recomendame un coche</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,20 +23,19 @@
                     <a class="nav-link" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Otra Página</a>
+                    <a class="nav-link" href="#">Stock</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
+
             </ul>
         </div>
     </nav>
     <div class="container">
-        <h1 class="mt-5">Base de Datos y Stock de Coches</h1>
+        <h1 class="mt-5">Base de datos y stock de coches</h1>
         <div class="form-group mt-4">
             <label for="buscar">Buscar Coche</label>
-            <input type="text" class="form-control" id="buscar" placeholder="Ingrese marca o modelo">
+            <input type="text" class="form-control" id="buscar" placeholder="Ingrese marca, modelo, combustible, etc.">
         </div>
+        <button type="button" id="btnBuscar" class="btn btn-primary">Buscar</button>
         <div id="listaCoches" class="mt-4"></div>
     </div>
 </body>
